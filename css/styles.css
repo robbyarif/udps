@@ -1,14 +1,15 @@
+/* Initialization */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid black;*/
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
 }
 
-img,
 embed,
+img,
 object,
 video {
   max-width: 100%;
@@ -16,8 +17,11 @@ video {
 
 body {
   max-width: 1500px;
-  margin:auto;
+  margin: auto;
 }
+
+
+/* Container */
 
 .container {
   display: flex;
@@ -27,6 +31,9 @@ body {
 .row {
   width: 100%;
 }
+
+
+/* Header */
 
 header::before {
   content: '';
@@ -72,11 +79,8 @@ header {
   text-align: center;
 }
 
-.line {
-  height: 5px;
-  border: none;
-  background-color: #7d97ad;
-}
+
+/* Main Content */
 
 .hero-image {
   width: 100%;
@@ -97,17 +101,21 @@ header {
 
 .portfolio {
   width: 33.3%;
+  padding: 10px;
 }
 
 .portfolio-image {
   width: 100%;
-  padding: 10px;
 }
 
-.portfolio-link {
+.portfolio-desc {
   min-width: 48px;
   min-height: 48px;
+  text-align: left;
 }
+
+
+/* Footer */
 
 .site-footer {
   margin-top: 10px;
@@ -122,106 +130,95 @@ header {
   text-align: right;
 }
 
+
+/* Screen <= 450px */
+
 @media screen and (max-width: 450px) {
   .logo {
     height: 50px;
   }
-
   .title-super {
     font-size: 27px;
   }
-
   .title-caption {
     font-size: small;
   }
-
   .section-title {
     font-size: 20px;
   }
-
   .hero {
     margin: 20px 0;
   }
-
   .portfolio {
     width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
   }
-
   .portfolio-image {
     width: 100%;
-    padding: 0;
   }
-
-  .portfolio-text {
+  .portfolio-desc {
     font-size: 15px;
   }
-
-  .portfolio-link {
+  .portfolio-desc {
     font-size: 13px;
   }
 }
+
+
+/* 450 < Screen <= 600px */
 
 @media screen and (min-width: 451px) and (max-width: 600px) {
   .logo {
     height: 50px;
   }
-
   .title-super {
     font-size: 27px;
   }
-
   .title-caption {
     font-size: small;
   }
-
   .section-title {
     font-size: 20px;
   }
-
   .hero {
     margin: 20px 0;
   }
-
   .portfolio {
     width: 50%;
+    padding: 10px;
   }
-
   .portfolio-image {
     width: 100%;
-    padding: 10px 10px;
   }
-
-  .portfolio-text {
+  .portfolio-desc {
     font-size: 15px;
   }
-
-  .portfolio-link {
+  .portfolio-desc {
     font-size: 13px;
   }
 }
+
+
+/* 600 < Screen <= 900px */
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
   .logo {
     height: 76px;
   }
-
   .title-super {
-    font-size: 2em
+    font-size: 2em;
   }
-
   .title-caption {
     font-size: 1.17em;
   }
-
   .portfolio {
     width: 50%;
   }
-
-  .portfolio-text {
+  .portfolio-desc {
     font-size: 1em;
   }
-
-  .portfolio-link {
+  .portfolio-desc {
     font-size: 1em;
   }
 }
