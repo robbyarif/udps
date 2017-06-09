@@ -9,5 +9,4 @@ Open `index.html` in browser. That's all.
 ## License
 
 The MIT License (MIT)
-
 [MIT License](https://opensource.org/licenses/MIT)

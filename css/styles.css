@@ -15,7 +15,7 @@ video {
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1500px;
   margin:auto;
 }
 
@@ -109,6 +109,19 @@ header {
   min-height: 48px;
 }
 
+.site-footer {
+  margin-top: 10px;
+  background-color: #7f7f7f;
+  height: 42px;
+  padding: 10px;
+}
+
+.footer-text {
+  color: white;
+  font-size: small;
+  text-align: right;
+}
+
 @media screen and (max-width: 450px) {
   .logo {
     height: 50px;
@@ -136,7 +149,7 @@ header {
 
   .portfolio-image {
     width: 100%;
-    padding: 10px 30px;
+    padding: 0;
   }
 
   .portfolio-text {
